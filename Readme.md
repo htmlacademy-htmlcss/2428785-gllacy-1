@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Андрей](https://up.htmlacademy.ru/htmlcss-individual/1/user/2428785).
-* Наставник: `Неизвестно`.
+* Наставник: [Малик Киров](https://htmlacademy.ru/profile/id17217).
 
 ---
 
