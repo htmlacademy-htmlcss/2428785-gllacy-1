@@ -66,6 +66,33 @@
           <option value="cheap">по дешевле</option>
           <option value="expensive">по дороже</option>
         </select>
+        <p class="select-title">Жирность:</p>
+        <ul class="catalog-filter-list">
+          <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="radio" name="product-group" value="zero">
+              0%
+            </label>
+          </li>
+          <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="radio" name="product-group" value="ten" checked>
+              до 10%
+            </label>
+          </li>
+          <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="radio" name="product-group" value="down-thirty">
+              до 30%
+            </label>
+          </li>
+          <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="radio" name="product-group" value="up-thirty">
+              выше 30%
+            </label>
+          </li>
+        </ul>
         <button class="catalog-button" type="submit">Применить</button>
       </form>
     </section>
