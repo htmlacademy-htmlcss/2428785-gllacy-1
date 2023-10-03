@@ -59,13 +59,13 @@
     </header>
     <section class="catalog-products">
       <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-      <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+      <select class="select-control">
         <p class="select-title">Сортировка:</p>
-        <select class="select-control">
-          <option value="popular">по популярности</option>
-          <option value="cheap">по дешевле</option>
-          <option value="expensive">по дороже</option>
-        </select>
+        <option value="popular">по популярности</option>
+        <option value="cheap">по дешевле</option>
+        <option value="expensive">по дороже</option>
+      </select>
+      <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
         <p class="select-title">Жирность:</p>
         <ul class="catalog-filter-list">
           <li class="catalog-filter-item">
@@ -90,6 +90,39 @@
             <label class="control">
               <input class="control-input" type="radio" name="product-group" value="up-thirty">
               выше 30%
+            </label>
+          </li>
+        </ul>
+        <p class="select-title">Наполнители:</p>
+        <ul class="catalog-filter-list">
+          <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="product-group" value="chocolate" checked>
+              шоколадные
+            </label>
+          </li>
+          <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="product-group" value="sugar" checked>
+              сахарные посыпки
+            </label>
+          </li>
+          <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="product-group" value="fruit">
+              фрукты
+            </label>
+          </li>
+          <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="product-group" value="syrup">
+              сиропы
+            </label>
+          </li>
+          <li class="catalog-filter-item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="product-group" value="jam">
+              джемы
             </label>
           </li>
         </ul>
