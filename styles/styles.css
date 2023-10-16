@@ -232,3 +232,28 @@ body {
   color: #FCFCFC;
   text-decoration: none;
 }
+
+/*Подвал*/
+.inside-favorite {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.inside-item {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.developer-description {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.developer-link {
+  color: #2D3440;
+}
