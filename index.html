@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин «Глейси»</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -24,7 +25,7 @@
       </ul>
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <a class="navigation-link" href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class="navigation-tel" href="tel:+78005558628">+7 800 555-86-28</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">
@@ -95,59 +96,60 @@
       <ul class="banner-list">
         <li class="banner-item">
           <h3 class="banner-item-title">Малинка даром!</h3>
-          <p class="banner-item-discription">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <p class="banner-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a class="button-banner-buy" href="#">Хочу подарок</a>
+          <img class="raspberry-image" src="images/raspberry-photo.png" width="219" height="268">
         </li>
         <li class="banner-item">
           <h3 class="banner-item-title">Маршмеллоу даром!</h3>
-          <p class="banner-item-discription">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+          <p class="banner-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
           <a class="button-banner-buy" href="#">Хочу подарок</a>
+          <img class="marshmellow-image" src="images/marshmellow-photo.png" width="219" height="268">
         </li>
       </ul>
     </section>
     <section class="tatse">
       <h2 class="tatse-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
       <ul class="tatse-list">
-        <li class="taste-item">
+        <li class="tatse-item">
           <a class="tatse-link" href="#">
             <img class="tatse-image" src="images/raspberry.jpg" width="168" height="168">
-            <h3 class="tatse-title">Малинка</h3>
+            <h3 class="tatse-item-title">Малинка</h3>
           </a>
-          <p class="taste-item-discription">Сливочное мороженое с малиновым джемом</p>
+          <p class="taste-description">Сливочное мороженое с малиновым джемом</p>
           <b class="taste-item-price">310 ₽/<sub>кг</sub></b>
           <a class="taste-item-button" href="#">
             <span class="visually-hidden">Положить в корзину</span>
           </a>
         </li>
-      </li>
-      <li class="tatse">
+      <li class="tatse-item">
         <a class="tatse-link" href="#">
           <img class="tatse-image" src="images/pistachio.jpg" width="168" height="168">
-          <h3 class="tatse-title">Фисташка</h3>
+          <h3 class="tatse-item-title">Фисташка</h3>
         </a>
-        <p class="tatse-item-discription">Фисташковый пломбир с кусочками шоколада</p>
+        <p class="taste-description">Фисташковый пломбир с кусочками шоколада</p>
         <b class="tatse-item-price">340 ₽/<sub>кг</sub></b>
         <a class="tatse-item-button" href="#">
           <span class="visually-hidden">Положить в корзину</span>
         </a>
       </li>
-      <li class="tatse">
+      <li class="tatse-item">
         <a class="tatse-link" href="#">
           <img class="tatse-image" src="images/blueberries.jpg" width="168" height="168">
-          <h3 class="tatse-title">Черника</h3>
+          <h3 class="tatse-item-title">Черника</h3>
         </a>
-        <p class="tatse-item-discription">Крем-брюле
+        <p class="taste-description">Крем-брюле
           с черничным джемом</p>
         <b class="tatse-item-price">330 ₽/<sub>кг</sub></b>
         <a class="tatse-item-button" href="#">
           <span class="visually-hidden">Положить в корзину</span>
         </a>
-        <li class="tatse">
+        <li class="tatse-item">
           <a class="tatse-link" href="#">
             <img class="tatse-image" src="images/bubblegum.jpg" width="168" height="168">
-            <h3 class="tatse-title">Бабл-гам</h3>
+            <h3 class="tatse-item-title">Бабл-гам</h3>
           </a>
-          <p class="tatse-item-discription">Ванильный пломбир
+          <p class="taste-description">Ванильный пломбир
             со сладкой посыпкой</p>
           <b class="tatse-item-price">320 ₽/<sub>кг</sub></b>
           <a class="tatse-item-button" href="#">
@@ -161,32 +163,32 @@
           <ul class="about-list">
             <li class="about-item">
               <img class="about-img" src="images/ice-cream.svg" alt="Иконка мороженного" width="48" height="48">
-              <p class="about-discription">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>
+              <p class="about-description">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>
             </li>
             <li class="about-item">
               <img class="about-img" src="images/list.svg" alt="Иконка листочка" width="48" height="48">
-              <p class="about-discription">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты
+              <p class="about-description">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты
                 и добавки произведены из натурального сырья.</p>
             </li>
             <li class="about-item">
               <img class="about-img" src="images/cow.svg" alt="Иконка коровы" width="48" height="48">
-              <p class="about-discription">Закупка ингредиентов производится только
+              <p class="about-description">Закупка ингредиентов производится только
                 у проверенных фермерских хозяйств, с которыми
                 нас связывает долговременное сотрудничество.</p>
             </li>
             <li class="about-item">
               <img class="about-img" src="images/thermometer.svg" alt="Иконка градусника" width="48" height="48">
-              <p class="about-discription">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
+              <p class="about-description">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
             </li>
           </ul>
         </section>
-        <section class="advertisement-blog">
-          <p class="advertisement-blog-discription">Новое в нашем блоге</p>
-          <a class="advertisement-blog-link" href="#">10 способов сервировки фруктовых щербетов
+        <section class="advertisement">
+          <p class="advertisement-description">Новое в нашем блоге</p>
+          <a class="advertisement-link" href="#">10 способов сервировки фруктовых щербетов
             к столу</a>
         </section>
-        <section class="advertisement-mailing">
-          <p class="advertisement-maililing-discription">Подпишитесь на нашу сладкую рассылку и будьте всегда
+        <section class="mailing">
+          <p class="maililing-description">Подпишитесь на нашу сладкую рассылку и будьте всегда
             в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="mailing" action="https://echo.htmlacademy.ru" method="post">
               <label for="newsletter-email">Email</label>
@@ -196,8 +198,8 @@
         </section>
         <section class="delivery">
           <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
-          <p class="delivery-discription">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-          <p class="delivery-discription">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <p class="delivery-description">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+          <p class="delivery-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
           <form class="delivery-form" action="https://echo.htmlacademy.ru" method="post">
             <p class="delivery-form-date">
               <label class="form-label" for="delivery-date">Дата</label>
@@ -216,13 +218,13 @@
         </section>
         <section class="office">
           <address class="office-contacts">
-            <p class="office-discription">Адрес главного офиса и офлайн-магазина:</p>
+            <p class="office-description">Адрес главного офиса и офлайн-магазина:</p>
             <b class="office-address">наб. реки Карповки, 5 лит П, Санкт-Петербург</b>
-            <p class="office-discription">Для заказов по телефону:</p>
+            <p class="office-description">Для заказов по телефону:</p>
             <b>
               <a class="office-phone" href="tel:+78005558628">+7 800 555-86-28</a>
             </b>
-            <p class="office-discription">(с 10 до 20 ежедневно)</p>
+            <p class="office-more">(с 10 до 20 ежедневно)</p>
             <a class="office-button" href="#">Форма обратной связи</button>
           </address>
         </section>
@@ -247,7 +249,7 @@
       </ul>
     <ul class="inside">
       <li class="inside-list">
-        <a class="inside-item" href="#">Для поставщиков</a>
+        <a class="inside-favorite" href="#">Для поставщиков</a>
       </li>
       <li class="inside-list">
         <a class="inside-item" href="#">О производстве</a>
@@ -260,8 +262,11 @@
       </li>
     </ul>
     <a class="developer" href="https://htmlacademy.ru">
-      <img class="developer-logo" alt="Логотип разработчика сайта «HTML Academy»" src="images/developer.svg" width="193" height="57">
+      <img class="developer-logo" alt="Логотип разработчика сайта «HTML Academy»" src="images/developer.svg" width="93" height="26.711">
       </a>
+      <p class="developer-description">Сделано в
+        <a class="developer-link" href="https://htmlacademy.ru">.html academy</a>
+        © 2021</p>
   </footer>
   </body>
 </html>

@@ -1,0 +1,346 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+/*Главная страница*/
+/*Шапка*/
+.main-header {
+  line-height: 20px;
+}
+
+.navigation-link {
+  color: #2D3440;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navigation-user {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.navigation-tel {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+/*Основная страница*/
+.products-title {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.products-description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button-buy {
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+/*Баннеры*/
+.banner-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  text-align: center;
+}
+
+.banner-item {
+  background-color: #F79;
+  border-radius: 16px;
+}
+
+.banner-item-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.button-banner-buy {
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+/*Популярные вкусы*/
+.tatse-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  text-align: center;
+}
+
+.tatse-item {
+  text-align: center;
+  background-color: #FCFCFC;
+  border-radius: 8px;
+  width: 270px;
+  height: 281px;
+}
+
+.tatse-description {
+  color: #565C66;
+}
+
+.tatse-item-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #2D3440;
+}
+
+.tatse-link {
+  text-decoration: none;
+}
+
+.taste-item-price {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.tatse-image {
+  border-radius: 50%;
+}
+
+/*О магазине*/
+.about-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  text-align: center;
+}
+
+.about-description {
+  color: #2D3440;
+}
+
+/*Реклама*/
+.advertisement-description {
+  line-height: 20px;
+  color: #565C66;
+}
+
+.advertisement-link {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.maililing-description {
+  color: #565C66;
+}
+
+.mailing-button {
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #FCFCFC;
+}
+
+/*Доставка*/
+.delivery-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  color: #2D3440;
+}
+
+.delivery-description {
+  color: #565C66;
+}
+
+.form-label {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.delivery-button {
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #FCFCFC;
+}
+
+/*Адрес офиса*/
+.office-contacts {
+  font-style: normal;
+}
+
+.office-description {
+  color: #565C66;
+}
+
+.office-address {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.office-phone {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.office-more {
+  font-size: 14px;
+  line-height: 20px;
+  color: #565C66;
+}
+
+.office-button {
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #FCFCFC;
+  text-decoration: none;
+}
+
+/*Подвал*/
+.inside-favorite {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.inside-item {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.developer-description {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.developer-link {
+  color: #2D3440;
+}
+
+/*Страница каталога*/
+.breadcrumbs-link {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.breadcrumbs-current {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.inner-header-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.select-title {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.control {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.catalog-button {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.product-card {
+  border-radius: 8px;
+  background-color: #FCFCFC;
+  width: 270px;
+  height: 281px;
+  text-align: center;
+}
+
+.product-card-image {
+  border-radius: 50%;
+}
+
+.product-item-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #2D3440;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-item-price {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.button-show-more {
+  font-weight: 700;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.pagination-link {
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
