@@ -30,6 +30,7 @@ body {
   background-color: #FEAFC3;
 }
 
+/*Главная страница*/
 /*Шапка*/
 .main-header {
   line-height: 20px;
@@ -112,6 +113,8 @@ body {
   text-align: center;
   background-color: #FCFCFC;
   border-radius: 8px;
+  width: 270px;
+  height: 281px;
 }
 
 .tatse-description {
@@ -133,6 +136,10 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.tatse-image {
+  border-radius: 50%;
 }
 
 /*О магазине*/
@@ -256,4 +263,84 @@ body {
 
 .developer-link {
   color: #2D3440;
+}
+
+/*Страница каталога*/
+.breadcrumbs-link {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.breadcrumbs-current {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.inner-header-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.select-title {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.control {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.catalog-button {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.product-card {
+  border-radius: 8px;
+  background-color: #FCFCFC;
+  width: 270px;
+  height: 281px;
+  text-align: center;
+}
+
+.product-card-image {
+  border-radius: 50%;
+}
+
+.product-item-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #2D3440;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-item-price {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.button-show-more {
+  font-weight: 700;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.pagination-link {
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
 }
