@@ -44,15 +44,18 @@
     </nav>
   </header>
   <main class="main-page">
+    <div class="page-container">
     <section class="products">
       <h2 class="products-title">Нежный пломбир
         с клубничным джемом</h2>
       <p class="products-description">Натуральное мороженое из свежих сливок
         и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
         <a class="button button-buy" href="#">Заказать</a>
-          <img class="slider-image" src="images/slider-ice-cream.png" width="327.154" height="507" alt="Нежный пломбир с клубничным джемом">
+          <img class="slider-image" src="images/slider-ice-cream-strawberries.png" width="327.154" height="507" alt="Нежный пломбир с клубничным джемом">
       <button class="slider-button slider-prev" type="button">Предыдущий товар</button>
       <button class="slider-button slider-next" type="button">Следующий товар</button>
+      <img class="slider-image-next" src="images/slider-ice-cream-banana.png" width="66" height="150" alt="Сливочное мороженое со вкусом банана">
+      <img class="slider-image-next" src="images/slider-ice-cream-caramel.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу">
 
       <ol class="slider-pagination">
         <li class="slider-pagination-item">
@@ -94,13 +97,13 @@
     <section class="banner">
       <h2 class="banner-title">Заказывайте мороженое и получайте подарки!</h2>
       <ul class="banner-list">
-        <li class="banner-item">
+        <li class="banner-item-raspberry">
           <h3 class="banner-item-title">Малинка даром!</h3>
           <p class="banner-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a class="button-banner-buy" href="#">Хочу подарок</a>
           <img class="raspberry-image" src="images/raspberry-photo.png" width="219" height="268">
         </li>
-        <li class="banner-item">
+        <li class="banner-item-marshmellow">
           <h3 class="banner-item-title">Маршмеллоу даром!</h3>
           <p class="banner-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
           <a class="button-banner-buy" href="#">Хочу подарок</a>
@@ -228,8 +231,10 @@
             <a class="office-button" href="#">Форма обратной связи</button>
           </address>
         </section>
+        </div>
   </main>
   <footer class="main-footer">
+    <div class="page-footer-container">
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="footer-button" href="#">
@@ -247,26 +252,29 @@
           </a>
         </li>
       </ul>
-    <ul class="inside">
-      <li class="inside-list">
-        <a class="inside-favorite" href="#">Для поставщиков</a>
-      </li>
-      <li class="inside-list">
-        <a class="inside-item" href="#">О производстве</a>
-      </li>
-      <li class="inside-list">
-        <a class="inside-item" href="#">Наши документы</a>
-      </li>
-      <li class="inside-list">
-        <a class="inside-item" href="#">Экологические стандарты</a>
-      </li>
-    </ul>
-    <a class="developer" href="https://htmlacademy.ru">
-      <img class="developer-logo" alt="Логотип разработчика сайта «HTML Academy»" src="images/developer.svg" width="93" height="26.711">
+      <ul class="inside">
+        <li class="inside-list">
+          <a class="inside-favorite" href="#">Для поставщиков</a>
+        </li>
+        <li class="inside-list">
+          <a class="inside-item" href="#">О производстве</a>
+        </li>
+        <li class="inside-list">
+          <a class="inside-item" href="#">Наши документы</a>
+        </li>
+        <li class="inside-list">
+          <a class="inside-item" href="#">Экологические стандарты</a>
+        </li>
+      </ul>
+      <section class="developer">
+      <a class="developer-image" href="https://htmlacademy.ru">
+        <img class="developer-logo" alt="Логотип разработчика сайта «HTML Academy»" src="images/developer.svg" width="93" height="26.711">
       </a>
       <p class="developer-description">Сделано в
         <a class="developer-link" href="https://htmlacademy.ru">.html academy</a>
         © 2021</p>
+        </section>
+    </div>
   </footer>
   </body>
 </html>
