@@ -38,6 +38,17 @@ body {
   background-color: #FEAFC3;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-inner {
   flex-grow: 1;
 }
@@ -60,15 +71,19 @@ body {
 }
 
 .navigation-list {
+  display: flex;
   padding: 0;
   margin: 0;
   width: 685px;
+  list-style-type: none;
 }
 
 .navigation-link {
+  display: block;
   color: #2D3440;
   text-decoration: none;
   text-align: center;
+  padding: 8px 16px;
 }
 
 .navigation-user {
@@ -76,6 +91,11 @@ body {
   line-height: 20px;
   max-width: 471px;
   margin-left: auto;
+}
+
+.navigation-user .navigation-link {
+  min-width: 16px;
+  min-height: 16px;
 }
 
 .navigation-tel {
@@ -93,6 +113,7 @@ body {
 
 .products {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 70px;
 }
@@ -116,7 +137,24 @@ body {
   color: #2D3440;
 }
 
+.main-social-item {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.main-social-item:nth-child(3n) {
+  margin-right: 0;
+}
+
 /*Баннеры*/
+.banner {
+  margin-bottom: 80px;
+}
+
 .banner-title {
   font-size: 32px;
   font-weight: 900;
@@ -124,27 +162,35 @@ body {
   text-align: center;
   width: 434px;
   margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 55px;
 }
 
 .banner-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  list-style-type: none;
 }
 
 .banner-item-raspberry {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #F79;
   border-radius: 16px;
   width: 570px;
-  padding-left: 36px;
+  height: 268px;
+  padding: 36px;
   padding-right: 200px;
   margin-right: 30px;
 }
 
 .banner-item-marshmellow {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #F79;
   border-radius: 16px;
   width: 570px;
-  padding-left: 36px;
+  padding: 36px;
   padding-right: 200px;
 }
 
@@ -152,6 +198,12 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+.banner-description {
+  margin-bottom: 28px;
 }
 
 .button-banner-buy {
@@ -163,6 +215,10 @@ body {
 }
 
 /*Популярные вкусы*/
+.tatse {
+  margin-bottom: 80px;
+}
+
 .tatse-title {
   font-size: 32px;
   font-weight: 900;
@@ -170,6 +226,7 @@ body {
   text-align: center;
   width: 527px;
   margin: 0 auto;
+  margin-bottom: 56px;
 }
 
 .tatse-list {
@@ -177,6 +234,7 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   padding: 0;
+  list-style-type: none;
 }
 
 .tatse-item {
@@ -213,6 +271,10 @@ body {
 }
 
 /*О магазине*/
+.about {
+  margin-bottom: 80px;
+}
+
 .about-title {
   font-size: 32px;
   font-weight: 900;
@@ -220,6 +282,11 @@ body {
   text-align: center;
   width: 995px;
   margin: 0 auto;
+  margin-bottom: 56px;
+}
+
+.about-list {
+  list-style-type: none;
 }
 
 .about-description {
@@ -227,6 +294,10 @@ body {
 }
 
 /*Реклама*/
+.advertisement-mailing {
+  margin-bottom: 80px;
+}
+
 .advertisement {
   width: 570px;
   margin-right: 30px;
@@ -261,6 +332,10 @@ body {
 }
 
 /*Доставка*/
+.delivery {
+  margin-bottom: 80px;
+}
+
 .delivery-title {
   font-size: 32px;
   font-weight: 900;
