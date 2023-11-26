@@ -1,0 +1,616 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*Главная страница*/
+/*Шапка*/
+.main-header {
+  line-height: 20px;
+}
+
+.navigation {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.navigation-logo {
+  width: 137px;
+  margin-right: 16px;
+}
+
+.navigation-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 685px;
+  list-style-type: none;
+}
+
+.navigation-link {
+  display: block;
+  color: #2D3440;
+  text-decoration: none;
+  text-align: center;
+  padding: 8px 16px;
+}
+
+.navigation-user {
+  font-size: 14px;
+  line-height: 20px;
+  max-width: 471px;
+  margin-left: auto;
+}
+
+.navigation-user .navigation-link {
+  min-width: 16px;
+  min-height: 16px;
+}
+
+.navigation-tel {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+/*Основная страница*/
+.page-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 70px;
+}
+
+.products-title {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.products-description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button-buy {
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.main-social-item {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.main-social-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+/*Баннеры*/
+.banner {
+  margin-bottom: 80px;
+}
+
+.banner-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  text-align: center;
+  width: 434px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 55px;
+}
+
+.banner-list {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style-type: none;
+}
+
+.banner-item-raspberry {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #F79;
+  border-radius: 16px;
+  width: 570px;
+  height: 268px;
+  padding: 36px;
+  padding-right: 200px;
+  margin-right: 30px;
+}
+
+.banner-item-marshmellow {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #F79;
+  border-radius: 16px;
+  width: 570px;
+  padding: 36px;
+  padding-right: 200px;
+}
+
+.banner-item-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+.banner-description {
+  margin-bottom: 28px;
+}
+
+.button-banner-buy {
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+/*Популярные вкусы*/
+.tatse {
+  margin-bottom: 80px;
+}
+
+.tatse-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  text-align: center;
+  width: 527px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+}
+
+.tatse-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tatse-item {
+  text-align: center;
+  background-color: #FCFCFC;
+  border-radius: 8px;
+  width: 270px;
+  height: 281px;
+}
+
+.tatse-description {
+  color: #565C66;
+}
+
+.tatse-item-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #2D3440;
+}
+
+.tatse-link {
+  text-decoration: none;
+}
+
+.taste-item-price {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.tatse-image {
+  border-radius: 50%;
+}
+
+/*О магазине*/
+.about {
+  margin-bottom: 80px;
+}
+
+.about-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  text-align: center;
+  width: 995px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+}
+
+.about-list {
+  list-style-type: none;
+}
+
+.about-description {
+  color: #2D3440;
+}
+
+/*Реклама*/
+.advertisement-mailing {
+  margin-bottom: 80px;
+}
+
+.advertisement {
+  width: 570px;
+  margin-right: 30px;
+}
+
+.maililing {
+  width: 570px;
+}
+
+.advertisement-description {
+  line-height: 20px;
+  color: #565C66;
+}
+
+.advertisement-link {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.maililing-description {
+  color: #565C66;
+}
+
+.mailing-button {
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #FCFCFC;
+}
+
+/*Доставка*/
+.delivery {
+  margin-bottom: 80px;
+}
+
+.delivery-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  color: #2D3440;
+}
+
+.delivery-description {
+  color: #565C66;
+}
+
+.form-label {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.delivery-button {
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #FCFCFC;
+}
+
+/*Адрес офиса*/
+.office-contacts {
+  font-style: normal;
+}
+
+.office-description {
+  color: #565C66;
+}
+
+.office-address {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.office-phone {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.office-more {
+  font-size: 14px;
+  line-height: 20px;
+  color: #565C66;
+}
+
+.office-button {
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #FCFCFC;
+  text-decoration: none;
+}
+
+/*Подвал*/
+.page-footer-container {
+  display: flex;
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.footer-social-list {
+  width: 104px;
+  margin-right: 259px;
+  list-style-type: none;
+  gap: 16px;
+}
+
+.inside {
+  display: flex;
+  margin-left: auto;
+  max-width: 1171px;
+  list-style-type: none;
+}
+
+.inside-favorite {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.inside-item {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.developer {
+  display: flex;
+  margin-left: auto;
+  max-width: 195px;
+}
+
+.developer-description {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.developer-link {
+  color: #2D3440;
+}
+
+/*Страница каталога*/
+.main-inner {
+  flex-grow: 1;
+  padding-top: 32px;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs-item {
+  margin-right: 28px;
+}
+
+.breadcrumbs-link {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.breadcrumbs-current {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.inner-header-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  margin-bottom: 40px;
+}
+
+.select-title {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.select-control {
+  width: 196px;
+  margin-right: 24px;
+  height: 64px;
+}
+
+.control {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.catalog-products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-filter {
+  display: flex;
+  margin-bottom: 44px;
+}
+
+.catalog-filter-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.catalog-filter-item {
+  padding-right: 16px;
+}
+
+.catalog-filter-item:first-child {
+  padding-left: 24px;
+}
+
+.catalog-filter-item:last-child {
+  padding-right: 24px;
+}
+
+.catalog-button {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.product-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.product-card {
+  border-radius: 8px;
+  background-color: #FCFCFC;
+  width: 270px;
+  height: 281px;
+  text-align: center;
+}
+
+.product-card-image {
+  border-radius: 50%;
+}
+
+.product-item-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #2D3440;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-item-price {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.pagination-container {
+  display: flex;
+}
+
+.button-show-more {
+  display: flex;
+  font-weight: 700;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 12px 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-item {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  padding: 2px 8px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination-link {
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
