@@ -60,14 +60,17 @@
     <h1 class="inner-header-title">Сливочное мороженное</h1>
     </header>
     <section class="catalog-products">
+      <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
       <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-      <select class="select-control">
+      <div class="select-option">
         <p class="select-title">Сортировка:</p>
+      <select class="select-control">
         <option value="popular">по популярности</option>
         <option value="cheap">по дешевле</option>
         <option value="expensive">по дороже</option>
       </select>
-      <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+      </div>
+        <div class="select-option">
         <p class="select-title">Жирность:</p>
         <ul class="catalog-filter-list">
           <li class="catalog-filter-item">
@@ -95,6 +98,8 @@
             </label>
           </li>
         </ul>
+        </div>
+        <div class="select-option">
         <p class="select-title">Наполнители:</p>
         <ul class="catalog-filter-list">
           <li class="catalog-filter-item">
@@ -128,6 +133,7 @@
             </label>
           </li>
         </ul>
+        </div>
         <button class="catalog-button" type="submit">Применить</button>
       </form>
     </div>
@@ -271,6 +277,7 @@
                     </a>
                     </li>
           </ul>
+          <div class="pagination-container">
           <a class="button-show-more" href="#">Показать еще</a>
           <ul class="pagination">
             <li class="pagination-item">
@@ -299,51 +306,56 @@
               </a>
             </li>
           </ul>
+          </div>
     </section>
   </div>
   </main>
   <footer class="main-footer">
     <div class="page-footer-container">
-    <ul class="footer-social-list">
-      <li class="footer-social-item">
-        <a class="footer-button" href="#">
-          <span class="visually-hidden">Телеграм</span>
-        </a>
-      </li>
-      <li class="footer-social-item">
-        <a class="footer-button" href="#">
-          <span class="visually-hidden">ВКонтакте</span>
-        </a>
-      </li>
-      <li class="footer-social-item">
-        <a class="footer-button" href="#">
-          <span class="visually-hidden">Ютуб</span>
-        </a>
-      </li>
-    </ul>
-  <ul class="inside">
-    <li class="inside-list">
-      <a class="inside-favorite" href="#">Для поставщиков</a>
-    </li>
-    <li class="inside-list">
-      <a class="inside-item" href="#">О производстве</a>
-    </li>
-    <li class="inside-list">
-      <a class="inside-item" href="#">Наши документы</a>
-    </li>
-    <li class="inside-list">
-      <a class="inside-item" href="#">Экологические стандарты</a>
-    </li>
-  </ul>
-  <section class="developer">
-    <a class="developer-image" href="https://htmlacademy.ru">
-    <img class="developer-logo" alt="Логотип разработчика сайта «HTML Academy»" src="images/developer.svg" width="93" height="26.711">
-    </a>
-    <p class="developer-description">Сделано в
-      <a class="developer-link" href="https://htmlacademy.ru">.html academy</a>
-      © 2021</p>
-      </section>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="footer-button" href="#">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-button" href="#">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-button" href="#">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="inside">
+        <div class="inside-left">
+        <li class="inside-list">
+          <a class="inside-favorite" href="#">Для поставщиков</a>
+        </li>
+        <li class="inside-list">
+          <a class="inside-item" href="#">О производстве</a>
+        </li>
+        </div>
+        <div class="inside-right">
+        <li class="inside-list">
+          <a class="inside-item" href="#">Наши документы</a>
+        </li>
+        <li class="inside-list">
+          <a class="inside-item" href="#">Экологические стандарты</a>
+        </li>
+        </div>
+      </ul>
+      <section class="developer">
+      <a class="developer-image" href="https://htmlacademy.ru">
+        <img class="developer-logo" alt="Логотип разработчика сайта «HTML Academy»" src="images/developer.svg" width="93" height="26.711">
+      </a>
+      <p class="developer-description">Сделано в
+        <a class="developer-link" href="https://htmlacademy.ru">.html academy</a>
+        © 2021</p>
+        </section>
     </div>
-</footer>
+  </footer>
 </body>
 </html>
