@@ -647,13 +647,13 @@ body {
 }
 
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 270px 270px 270px 270px;
   gap: 30px;
   list-style-type: none;
   margin: 0;
-  margin-bottom: 16px;
   padding: 0;
+  margin-bottom: 16px;
 }
 
 .product-container {
