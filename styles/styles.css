@@ -265,10 +265,9 @@ body {
 }
 
 .tatse-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 270px 270px 270px 270px;
   gap: 30px;
-  padding: 0;
   list-style-type: none;
 }
 
