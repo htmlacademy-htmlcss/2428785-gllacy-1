@@ -83,31 +83,57 @@
         <option value="expensive">по дороже</option>
       </select>
       </div>
+      <div class="range">
+      <div class="range-wrapper-inputs">
+        <label class="catalog-filter-label">
+          Цена: <input class="range-input" type="number" value="100" name="min-price"> ₽
+        </label>
+        <label class="catalog-filter-label">
+          – <input class="range-input" type="number" value="500" name="max-price"> ₽
+        </label>
+      </div>
+        <div class="range-scale">
+          <div class="range-bar" style="left: 24px; width: 56px">
+            <button class="range-toggle toggle-min">
+              <svg class="button-toggle" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#2D3440"/><circle cx="8" cy="8" r="2" fill="#FCFCFC"/></svg>
+              <span class="visually-hidden">Изменить минимальную цену.</span>
+            </button>
+            <button class="range-toggle toggle-max">
+              <svg class="button-toggle" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#2D3440"/><circle cx="8" cy="8" r="2" fill="#FCFCFC"/></svg>
+              <span class="visually-hidden">Изменить максимальную цену.</span>
+            </button>
+          </div>
+        </div>
+      </div>
         <div class="select-option">
         <p class="select-title">Жирность:</p>
         <ul class="catalog-filter-list">
           <li class="catalog-filter-item">
             <label class="control">
               <input class="control-input" type="radio" name="product-group" value="zero">
-              0%
+              <span class="control-mark-fat"></span>
+              <span class="control-label">0%</span>
             </label>
           </li>
           <li class="catalog-filter-item">
             <label class="control">
               <input class="control-input" type="radio" name="product-group" value="ten" checked>
-              до 10%
+              <span class="control-mark-fat"></span>
+              <span class="control-label">до 10%</span>
             </label>
           </li>
           <li class="catalog-filter-item">
             <label class="control">
               <input class="control-input" type="radio" name="product-group" value="down-thirty">
-              до 30%
+              <span class="control-mark-fat"></span>
+              <span class="control-label">до 30%</span>
             </label>
           </li>
           <li class="catalog-filter-item">
             <label class="control">
               <input class="control-input" type="radio" name="product-group" value="up-thirty">
-              выше 30%
+              <span class="control-mark-fat"></span>
+              <span class="control-label">выше 30%</span>
             </label>
           </li>
         </ul>
@@ -118,31 +144,36 @@
           <li class="catalog-filter-item">
             <label class="control">
               <input class="control-input" type="checkbox" name="chocolate" checked>
-              шоколадные
+              <span class="control-mark-fill"></span>
+              <span class="control-label">шоколадные</span>
             </label>
           </li>
           <li class="catalog-filter-item">
             <label class="control">
               <input class="control-input" type="checkbox" name="sugar" checked>
-              сахарные посыпки
+              <span class="control-mark-fill"></span>
+              <span class="control-label">сахарные посыпки</span>
             </label>
           </li>
           <li class="catalog-filter-item">
             <label class="control">
               <input class="control-input" type="checkbox" name="fruit">
-              фрукты
+              <span class="control-mark-fill"></span>
+              <span class="control-label">фрукты</span>
             </label>
           </li>
           <li class="catalog-filter-item">
             <label class="control">
               <input class="control-input" type="checkbox" name="syrup">
-              сиропы
+              <span class="control-mark-fill"></span>
+              <span class="control-label">сиропы</span>
             </label>
           </li>
           <li class="catalog-filter-item">
             <label class="control">
               <input class="control-input" type="checkbox" name="jam">
-              джемы
+              <span class="control-mark-fill"></span>
+              <span class="control-label">джемы</span>
             </label>
           </li>
         </ul>
