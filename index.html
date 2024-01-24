@@ -18,6 +18,26 @@
           <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none" viewBox="0 0 16 17">
             <path fill="#2D3440" fill-rule="evenodd" d="M3.808 7.053a.667.667 0 1 0-.943.943l4.66 4.66a.664.664 0 0 0 .955 0l4.661-4.66a.667.667 0 0 0-.942-.943l-4.196 4.195-4.195-4.195Z" clip-rule="evenodd"/></svg>
         </a>
+        <div class="popover-catalog popover-catalog-close">
+          <div class="popover-content">
+              <a class="catalog-item-new" href="#">Новинки</a>
+              <div class="border-line"></div>
+            <ul class="catalog-item-menu">
+              <li class="catalog-list">
+                <a class="catalog-item" href="#">Сливочное</a>
+              </li>
+              <li class="catalog-list">
+                <a class="catalog-item" href="#">Щербеты</a>
+              </li>
+              <li class="catalog-list">
+                <a class="catalog-item" href="#">Фруктовый лед</a>
+              </li>
+              <li class="catalog-list">
+                <a class="catalog-item" href="#">Мелорин</a>
+              </li>
+              </ul>
+          </div>
+        </div>
       </li>
       <li class="navigation-item">
         <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -38,42 +58,44 @@
               Поиск
             </span>
           </a>
+          <div class="popover-search popover-search-close">
+            <div class="popover-content">
+              <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+                <p class="field-group">
+                  <label class="visually-hidden" for="search">Поиск по сайту</label>
+                  <input class="search-form-field field" type="text" id="search" name="search" placeholder="Поиск по сайту">
+                </p>
+                </div>
+              </form>
+              </div>
+            </div>
+          </div>
         </li>
         <li class="navigation-item">
           <a class="navigation-link navigation-link-login" href="#">
           <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none" viewBox="0 0 16 17">
             <path fill="#2D3440" fill-rule="evenodd" d="M9 2.525c0-.369.298-.667.667-.667h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H9.667a.667.667 0 0 1 0-1.333h2.666A.667.667 0 0 0 13 13.19V3.858a.666.666 0 0 0-.667-.667H9.667A.667.667 0 0 1 9 2.525ZM5.862 4.72c.26-.26.682-.26.943 0l3.329 3.329a.69.69 0 0 1 .129.177.664.664 0 0 1-.13.774l-3.328 3.33a.667.667 0 1 1-.943-.944l2.195-2.195h-6.39a.667.667 0 1 1 0-1.333h6.39L5.862 5.663a.667.667 0 0 1 0-.943Z" clip-rule="evenodd"/></svg>
         Вход</a>
-        <div class="popover popover-cart">
+        <div class="popover-login popover-login-close">
           <div class="popover-content">
-            <h2 class="popover-title">Корзина</h2>
-            <ul class="cart-items-list">
-              <li class="cart-item">
-                <img class="cart-item-image" src="images/raspberry.jpg" width="46" height="46">
-                <p class="cart-item-title">Малинка
-                  <span class="cart-item-weight">1 кг х 310 ₽</span>
-                </p>
-                <p class="cart-item-price">310 ₽</p>
-                <button type="button" class="cart-item-button button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="#2D3440" fill-rule="evenodd" d="M12.803 4.138a.667.667 0 1 0-.943-.943L8 7.056l-3.862-3.86a.667.667 0 1 0-.943.942L7.056 8l-3.86 3.861a.667.667 0 1 0 .942.943L8 8.942l3.861 3.861a.667.667 0 1 0 .943-.943L8.942 8l3.861-3.862Z" clip-rule="evenodd"/></svg>
-                  <span class="visually-hidden">Удалить из корзины</span>
-                </button>
-              </li>
-              <li class="cart-item">
-                <img class="cart-item-image" src="images/bubblegum.jpg" width="46" height="46">
-                <p class="cart-item-title">Бабл-гам
-                  <span class="cart-item-weight">1,5 кг х 320 ₽</span>
-                </p>
-                <p class="cart-item-price">480 ₽</p>
-                <button type="button" class="cart-item-button button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="#2D3440" fill-rule="evenodd" d="M12.803 4.138a.667.667 0 1 0-.943-.943L8 7.056l-3.862-3.86a.667.667 0 1 0-.943.942L7.056 8l-3.86 3.861a.667.667 0 1 0 .942.943L8 8.942l3.861 3.861a.667.667 0 1 0 .943-.943L8.942 8l3.861-3.862Z" clip-rule="evenodd"/></svg>
-                  <span class="visually-hidden">Удалить из корзины</span>
-                </button>
-              </li>
-            </ul>
-            <div class="cart-price">
-            <button class="cart-button" type="submit">Оформить заказ</button>
-            <span class="cart-amount">Итого: 790 ₽</span>
+            <h2 class="popover-title">Личный кабинет</h2>
+            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group">
+                <label class="visually-hidden" for="auth-login">Логин</label>
+                <input class="auth-form-field field" type="text" id="auth-login" name="auth-login" placeholder="Логин">
+              </p>
+              <p class="field-group">
+                <label class="visually-hidden" for="auth-password">Пароль</label>
+                <input class="auth-form-field field" type="password" id="auth-password" name="auth-password" placeholder="Пароль">
+              </p>
+              <div class="login-options">
+                <button class="button auth-form-button" type="submit">Войти</button>
+                <div class="login-help">
+                  <a class="auth-form-recovery" href="#">Забыли пароль?</a>
+                  <a class="auth-form-register" href="#">Регистрация</a>
+                </div>
+              </div>
+            </form>
             </div>
           </div>
         </div>
@@ -83,6 +105,39 @@
             <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none" viewBox="0 0 16 17">
               <path fill="#2D3440" fill-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/></svg>
             2 товара</a>
+            <div class="popover-cart popover-cart-close">
+              <div class="popover-content">
+                <h2 class="popover-title">Корзина</h2>
+                <ul class="cart-items-list">
+                  <li class="cart-item">
+                    <img class="cart-item-image" src="images/raspberry.jpg" width="46" height="46">
+                    <p class="cart-item-title">Малинка
+                      <span class="cart-item-weight">1 кг х 310 ₽</span>
+                    </p>
+                    <p class="cart-item-price">310 ₽</p>
+                    <button type="button" class="cart-item-button button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="#2D3440" fill-rule="evenodd" d="M12.803 4.138a.667.667 0 1 0-.943-.943L8 7.056l-3.862-3.86a.667.667 0 1 0-.943.942L7.056 8l-3.86 3.861a.667.667 0 1 0 .942.943L8 8.942l3.861 3.861a.667.667 0 1 0 .943-.943L8.942 8l3.861-3.862Z" clip-rule="evenodd"/></svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="cart-item">
+                    <img class="cart-item-image" src="images/bubblegum.jpg" width="46" height="46">
+                    <p class="cart-item-title">Бабл-гам
+                      <span class="cart-item-weight">1,5 кг х 320 ₽</span>
+                    </p>
+                    <p class="cart-item-price">480 ₽</p>
+                    <button type="button" class="cart-item-button button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="#2D3440" fill-rule="evenodd" d="M12.803 4.138a.667.667 0 1 0-.943-.943L8 7.056l-3.862-3.86a.667.667 0 1 0-.943.942L7.056 8l-3.86 3.861a.667.667 0 1 0 .942.943L8 8.942l3.861 3.861a.667.667 0 1 0 .943-.943L8.942 8l3.861-3.862Z" clip-rule="evenodd"/></svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="cart-price">
+                <button class="cart-button" type="submit">Оформить заказ</button>
+                <span class="cart-amount">Итого: 790 ₽</span>
+                </div>
+              </div>
+            </div>
         </li>
         </ul>
     </nav>
@@ -90,7 +145,7 @@
   <main class="main-page">
     <div class="page-container">
     <section class="products">
-      <div class="products-slider slider-active">
+      <div class="products-slider-active">
       <h2 class="products-title">Нежный пломбир
         с клубничным джемом</h2>
       <p class="products-description">Натуральное мороженое из свежих сливок
@@ -101,15 +156,20 @@
         <img class="slider-image" src="images/slider-ice-cream-strawberries.png" width="327.154" height="507" alt="Нежный пломбир с клубничным джемом">
         <div class="slider-controls">
         <button class="slider-button slider-prev" type="button">
-          <svg class="button-slider-prev" xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none" viewBox="0 0 17 16"><path fill-rule="evenodd" d="M9.71 13.135a.665.665 0 0 0 .94-.94l-4.2-4.201 4.2-4.202a.665.665 0 0 0-.94-.94L5.042 7.52l-.003.003c-.26.26-.26.681 0 .94l4.671 4.672Z" clip-rule="evenodd"/></svg>
+          <svg class="button-slider-prev" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none" viewBox="0 0 17 16">
+            <path fill-rule="evenodd" d="M9.71 13.135a.665.665 0 0 0 .94-.94l-4.2-4.201 4.2-4.202a.665.665 0 0 0-.94-.94L5.042 7.52l-.003.003c-.26.26-.26.681 0 .94l4.671 4.672Z" clip-rule="evenodd"/>
+          </svg>
           <span class="visually-hidden">Предыдущий товар</span>
         </button>
         <button class="slider-button slider-next" type="button">
-          <svg class="button-slider-next" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M7.135 2.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94l4.669-4.669.003-.002c.26-.26.26-.681 0-.94L7.135 2.864Z" clip-rule="evenodd"/></svg>
+          <svg class="button-slider-next" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M7.135 2.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94l4.669-4.669.003-.002c.26-.26.26-.681 0-.94L7.135 2.864Z" clip-rule="evenodd"/>
+          </svg>
           <span class="visually-hidden">Следующий товар</span>
         </button>
         </div>
       </div>
+      <div class="next-products">
       <div class="products-slider">
         <div class="slider-description">
         <h2 class="products-title">Сливочное мороженое со вкусом банана</h2>
@@ -126,6 +186,7 @@
           <a class="button-main" href="#">Заказать</a>
         </div>
           <img class="slider-image-next" src="images/slider-ice-cream-caramel.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу">
+      </div>
       </div>
       </section>
       <div class="products-footer">
