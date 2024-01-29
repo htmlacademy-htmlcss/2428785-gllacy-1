@@ -56,7 +56,7 @@ body {
 .main-header {
   line-height: 20px;
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 45px;
 }
 
 .navigation {
@@ -77,10 +77,10 @@ body {
   width: 685px;
   list-style-type: none;
   align-items: center;
-  gap: 16px;
 }
 
 .navigation-item {
+  display: flex;
   position: relative;
 }
 
@@ -89,9 +89,9 @@ body {
   color: #2D3440;
   text-decoration: none;
   text-align: center;
-  padding: 8px 16px;
   display: flex;
   align-items: center;
+  padding: 8px 16px;
 }
 
 .navigation-link:hover {
@@ -203,6 +203,10 @@ body {
   line-height: 20px;
 }
 
+.navigation-link-catalog {
+  padding: 8px 16px;
+}
+
 .navigation-link-catalog .navigation-icon {
   margin-left: 6px;
 }
@@ -222,34 +226,40 @@ body {
 .navigation-user {
   font-size: 14px;
   line-height: 20px;
-  max-width: 471px;
-  margin-left: auto;
+  justify-content: right;
 }
 
 .navigation-link-search {
   border-radius: 27px;
   background: var(--basic-extra-light-icon, rgba(252, 252, 252, 0.30));
+  padding: 8px;
+  margin-right: 16px;
 }
 
 .navigation-link-search:hover {
   border-radius: 27px;
   background: var(--basic-extra-light-hover, rgba(252, 252, 252, 0.50));
+  padding: 8px;
 }
 
 .navigation-link-search:focus {
   border-radius: 27px;
   border: 2px solid var(--basic-extra-dark, #2D3440);
   background: var(--basic-extra-light-hover, rgba(252, 252, 252, 0.50));
+  padding: 8px;
 }
 
 .navigation-link-search:active {
   border-radius: 27px;
   background: var(--basic-extra-light, #FCFCFC);
+  padding: 8px;
 }
 
 .navigation-link-login {
   border-radius: 30px;
   background: var(--basic-extra-light-icon, rgba(252, 252, 252, 0.30));
+  margin-right: 16px;
+  padding: 6px 16px;
 }
 
 .navigation-link-login:hover {
@@ -284,6 +294,7 @@ body {
 .navigation-link-basket {
   border-radius: 30px;
   background: var(--basic-extra-light-icon, rgba(252, 252, 252, 0.30));
+  padding: 6px 16px;
 }
 
 .navigation-link-basket:hover {
@@ -551,6 +562,7 @@ min-height: 96px;
   font-weight: 700;
   color: #2D3440;
   text-decoration: none;
+  margin-right: 16px;
 }
 
 /*Основная страница*/
@@ -610,8 +622,7 @@ min-height: 96px;
 
 .products-slider-active {
   display: block;
-  width: 470px;
-  padding: 70px;
+  padding-left: 70px;
 }
 
 .next-products {
@@ -761,7 +772,7 @@ min-height: 96px;
 }
 
 .slider-pagination-item {
-  margin: 0 8px;
+  margin-right: 8px;
 }
 
 .slider-pagination-button {
@@ -797,7 +808,6 @@ min-height: 96px;
 
 .main-social-list {
   display: flex;
-  gap: 16px;
   padding: 0;
   margin: 0;
 }
@@ -806,8 +816,8 @@ min-height: 96px;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  width: 24px;
   height: 24px;
+  margin-right: 16px;
 }
 
 .main-social-item:nth-child(3n) {
@@ -819,17 +829,27 @@ min-height: 96px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 24px 24px;
-}
-
-.social-icon:hover {
-  background-color: #000;
   border-radius: 50%;
+  border: 2px solid #FDD5DF;
 }
 
-.social-icon:active {
+.social-icon {
+  display: block;
+}
+
+.social-link:hover {
+  background-color: #000;
+}
+
+.social-link:active {
   background-color: #000;
   border-radius: 50%;
   opacity: 0.5;
+}
+
+.social-link:focus {
+  background-color: #000;
+  border-color: #000;
 }
 
 /*Баннеры*/
@@ -862,6 +882,7 @@ min-height: 96px;
   width: 570px;
   height: 268px;
   margin-right: 30px;
+  justify-content: space-between;
 }
 
 .item-description {
@@ -876,6 +897,7 @@ min-height: 96px;
   border-radius: 16px;
   width: 570px;
   height: 268px;
+  justify-content: space-between;
 }
 
 .banner-item-title {
@@ -887,7 +909,10 @@ min-height: 96px;
 }
 
 .banner-description {
+  padding: 0;
+  margin: 0;
   margin-bottom: 28px;
+  min-width: 304px;
 }
 
 .button-banner-buy {
@@ -956,7 +981,6 @@ min-height: 96px;
   height: 32px;
   align-items: center;
   justify-content: center;
-  gap: 10px;
   flex-shrink: 0;
   border-radius: 26px;
   background: var(--special-extra-bright, #FF2F64);
@@ -1000,6 +1024,7 @@ min-height: 96px;
   color: #565C66;
   margin: 0;
   margin-bottom: 16px;
+  padding: 0 40px;
 }
 
 .taste-item-title {
@@ -1007,7 +1032,7 @@ min-height: 96px;
   font-weight: 700;
   line-height: 24px;
   color: #2D3440;
-  margin-top: 16px;
+  margin-top: 8px;
   margin-bottom: 8px;
 }
 
@@ -1019,6 +1044,7 @@ min-height: 96px;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  margin-top: 4px;
 }
 
 .taste-image {
@@ -1120,7 +1146,7 @@ min-height: 96px;
 
 .advertisement-link {
   padding: 0;
-  margin: 0 235px 0 32px;
+  margin-left: 32px;
   display: block;
   font-size: 24px;
   font-weight: 700;
@@ -1134,15 +1160,16 @@ min-height: 96px;
   padding: 0;
   margin: 0;
   color: #565C66;
-  width: 506px;
   padding: 26px;
   padding-bottom: 0;
   margin-bottom: 42px;
 }
 
 .mailing-form {
+  display: flex;
   padding: 0 26px 26px 26px;
   flex-grow: 1;
+  justify-content: space-between;
 }
 
 .mailing-form .field {
@@ -1221,7 +1248,6 @@ min-height: 96px;
 .delivery-form-description {
   color: #565C66;
   padding: 40px 80px 32px 40px;
-  padding-top: 24px;
   margin: 0;
 }
 
@@ -1366,6 +1392,7 @@ min-height: 96px;
   border-radius: 16px;
   padding: 0;
   margin: 0;
+  margin-bottom: 48px;
 }
 
 .office-contacts {
@@ -1411,11 +1438,13 @@ min-height: 96px;
 }
 
 .office-more {
+  display: block;
   font-size: 14px;
   line-height: 20px;
   color: #565C66;
-  padding: 0 143px 32px 40px;
+  padding: 0 143px 0px 40px;
   margin: 0;
+  margin-bottom: 32px;
 }
 
 .button-add-office {
@@ -1458,13 +1487,13 @@ min-height: 96px;
 
 /*Подвал*/
 .page-footer-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.footer-container {
   display: grid;
   grid-template-columns: 104px 873px 193px;
-  width: 1170px;
-  padding: 48px 0 48px 0;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
 }
 
 .footer-social-list {
@@ -1489,11 +1518,18 @@ min-height: 96px;
   display: flex;
   list-style-type: none;
   justify-content: center;
+  margin: 0;
+  min-height: 57px;
+  padding: 0;
 }
 
 .inside-left {
   margin-right: 24px;
   text-align: center;
+}
+
+.inside-list {
+  margin-bottom: 8px;
 }
 
 .inside-favorite {
@@ -1726,6 +1762,10 @@ line-height: 20px;
   width: 16px;
   height: 16px;
   border: 2px solid #2D3440;
+}
+
+.control-input:checked+.control-mark-fill{
+  background-color: red;
 }
 
 .catalog-button {
