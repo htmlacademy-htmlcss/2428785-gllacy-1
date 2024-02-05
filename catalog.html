@@ -171,19 +171,19 @@
         <header class="inner-header">
           <h1 class="inner-header-title">Сливочное мороженое</h1>
         </header>
-        <section class="catalog-products">
+        <form class="catalog-products" action="https://echo.htmlacademy.ru" method="get">
           <div class="filter-panel-up">
-            <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+            <div class="catalog-filter">
               <h2 class="visually-hidden">Список товаров с фильтрами</h2>
               <div class="select-option">
-                <label class="select-title">Сортировка:</label>
-                <select class="select-control">
+                <label class="select-title" for="sorting">Сортировка:</label>
+                <select class="select-control" id="sorting">
                   <option value="popular">по популярности</option>
                   <option value="cheap">по дешевле</option>
                   <option value="expensive">по дороже</option>
                 </select>
               </div>
-            </form>
+            </div>
             <div class="range">
               <div class="range-wrapper-inputs">
                 <label class="catalog-filter-label">
@@ -293,7 +293,7 @@
               <button class="catalog-button" type="submit">Применить</button>
             </div>
           </div>
-        </section>
+        </form>
         <div class="product-container">
           <ul class="taste-list">
             <li class="taste-item-catalog">
