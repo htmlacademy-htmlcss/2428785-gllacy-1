@@ -1895,13 +1895,12 @@ body.caramel {
 }
 
 .toggle-min {
-  top: -8px;
-  left: -6px;
+  top: -7px;
 }
 
 .toggle-max {
-  top: -8px;
-  right: -6px;
+  top: -7px;
+  right: 0px;
 }
 
 .range-input::-webkit-outer-spin-button,
