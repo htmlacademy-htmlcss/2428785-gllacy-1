@@ -1324,11 +1324,7 @@ body.caramel {
   outline: 2px solid #2D3440;
 }
 
-.field:invalid {
-  outline: 1px solid #EA5454;
-}
-
-.field:focus:invalid {
+.error {
   outline: 2px solid #EA5454;
 }
 
