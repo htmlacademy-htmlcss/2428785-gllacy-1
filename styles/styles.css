@@ -85,6 +85,7 @@ body.caramel {
   width: 685px;
   list-style-type: none;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .navigation-item {
@@ -846,6 +847,7 @@ body.caramel {
   display: flex;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .main-social-item {
@@ -853,7 +855,7 @@ body.caramel {
   flex-wrap: wrap;
   list-style-type: none;
   height: 24px;
-  margin-right: 11px;
+  margin-right: 10px;
 }
 
 .main-social-item:nth-child(3n) {
