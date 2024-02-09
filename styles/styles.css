@@ -597,6 +597,19 @@ body.caramel {
   margin-right: 16px;
 }
 
+.navigation-tel:hover {
+  color: #565C66;
+}
+
+.navigation-tel:active {
+  color: #FCFCFC;
+}
+
+.navigation-tel:focus {
+  border-radius: 27px;
+  outline: 2px solid #2D3440;
+}
+
 /*Основная страница*/
 .page-container {
   width: 1170px;
@@ -704,6 +717,7 @@ body.caramel {
   background-clip: padding-box;
   box-shadow: 0px 4px 12px 0px rgba(45, 52, 64, 0.10);
   cursor: pointer;
+  margin-bottom: 39px;
 }
 
 .button-main:hover {
@@ -918,7 +932,7 @@ body.caramel {
   background-color: #F79;
   border-radius: 16px;
   width: 570px;
-  height: 268px;
+  min-height: 268px;
   margin-right: 30px;
   justify-content: space-between;
 }
@@ -934,7 +948,7 @@ body.caramel {
   background-color: #F79;
   border-radius: 16px;
   width: 570px;
-  height: 268px;
+  min-height: 268px;
   justify-content: space-between;
 }
 
@@ -1124,7 +1138,7 @@ body.caramel {
 
 .about-item {
   display: flex;
-  width: 505.5px;
+  width: 505px;
   height: 66px;
 }
 
@@ -1160,7 +1174,7 @@ body.caramel {
 
 .mailing {
   width: 570px;
-  height: 224px;
+  min-height: 224px;
   border-radius: 16px;
   background-image: url(../images/follow.jpg);
 }
@@ -1289,7 +1303,7 @@ body.caramel {
 
 .delivery-right {
   width: 500px;
-  height: 406px;
+  min-height: 406px;
   flex-shrink: 0;
   margin: 64px;
   margin-left: 0;
